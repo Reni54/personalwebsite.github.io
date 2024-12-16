@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reni's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\Users\Owner\Desktop\New folder\style.css">
+ 
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="contact-info">
+            <span>Call me: (+359) 885392828</span> |
+            <a href="mailto:renibankova54@gmail.com">renibankova54@gmail.com</a> |
+            <a onclick="printPage()" href="#" class="download-cv">Download CV <i class="fas fa-file-download"></i></a> |
+            <a href="#" class="lets-chat">Let's Chat <i class="fas fa-comments"></i></a>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+        <div class="main-content">
+            <h2 class="about-me">About me</h2>
+            <h1>Hi, <br> I'm <span class="text-highlight">Reni</span></h1>
+            <p class="text-highlight">3D artist</p>
+            <p>Hey, are you looking for a 3D artist to build your brand and grow your business? Let's shake hands with me.</p>
+            <a href="#" class="hire-me">Hire me →</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2 class="text-center">Skills</h2>
+
+        <!-- New skills added as bubbles -->
+        <div class="skills-container">
+            <div class="skill-bubbles">
+                <!-- First row with one bubble -->
+                <div class="skill-row">
+                    <div class="skill-bubble">Animation</div>
+                </div>
+                <!-- Second row with two bubbles -->
+                <div class="skill-row">
+                    <div class="skill-bubble">Character Design</div>
+                    <div class="skill-bubble">UV mapping</div>
+                </div>
+                <!-- Third row with three bubbles -->
+                <div class="skill-row">
+                    <div class="skill-bubble">Lighting and Rendering</div>
+                    <div class="skill-bubble">Motion Graphics</div>
+                    <div class="skill-bubble">Photography</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2 class="text-center">Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="C:\Users\Owner\Desktop\donut render.png" alt="Project 1">
+                <h3>Donut</h3>
+                <p>A realistic looking donut made in Blender.</p>
+            </div>
+            <div class="project">
+                <img src="C:\Users\Owner\Desktop\glowing mushroom.png" alt="Project 2">
+                <h3>Glowing mushroom</h3>
+                <p>A fun little character made in Blender.</p>
+            </div>
+            <div class="project">
+                <img src="C:\Users\Owner\Desktop\tqlo 2.jpg" alt="Project 3">
+                <h3>Human body</h3>
+                <p style="text-align: center;">A project I had to do to observe the proportions of the human body.</pstyle="text-align:>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <div class="comments__container">
+        
+
+        <!-- comment form -->
+        <div class="comment-form">
+            <h3>Leave a comment</h3>
+            <form id="commentForm">
+                <input type="text" id="userName" placeholder="Your Name..." required><br><br>
+                <textarea id="commentText" placeholder="Enter your comment..." rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- display comments -->
+        <div class="comments-display">
+            <h3> All Comments </h3>
+            <div id="commentsList">
+                <!-- comments will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy;Reni's Portfolio. All rights reserved.</p>
+        </footer>
+
+        <!-- Scroll Back To Top Button -->
+        <div class="scroll-indicator" id="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+</body>
+</html>
+
+<!-- JavaScript (script.js) -->
+<script src="Script1.js"></script>
+
+<script>
+    function printPage() {
+        window.print();
+    }
+</script>

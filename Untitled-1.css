@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    header a {
+        text-decoration: none;
+        color: #333;
+        margin-left: 20px;
+        font-weight: 600;
+        padding: 8px 15px;
+        border-radius: 25px;
+        background: #e95c4b;
+        color: #fff;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+        header a:hover {
+            background-color: #cc503d;
+            transform: scale(1.05);
+        }
+
+/* Centered Section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+/* About Me Section */
+h1 {
+    color: #e95c4b;
+    font-size: 4em;
+    margin: 20px 0;
+    font-weight: 700;
+    transition: transform 0.3s ease-in-out;
+}
+
+    h1:hover {
+        transform: scale(1.05);
+    }
+
+h2 {
+    color: #0056b3;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background: #fee8e4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* Button Styles */
+button, .hire-me {
+    background-color: #e95c4b;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+    button:hover, .hire-me:hover {
+        background-color: #cc503d;
+        transform: scale(1.05);
+    }
+
+/* Image Styles */
+img.illustration {
+    max-width: 90%;
+    height: auto;
+    margin-left: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    img.illustration:hover {
+        transform: scale(1.05);
+    }
+
+/* Icons and Links */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+    .social-icons a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #333;
+        transition: color 0.3s, transform 0.2s;
+    }
+
+        .social-icons a:hover {
+            color: #e95c4b;
+            transform: translateY(-5px);
+        }
+
+/* Contact Info */
+.contact-info {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .contact-info a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #e95c4b;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s;
+        display: inline-block;
+    }
+
+        .contact-info a:hover {
+            background-color: #cc503d;
+            transform: scale(1.05);
+        }
+
+/* Input Forms Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #e95c4b;
+        box-shadow: 0px 0px 10px rgba(233, 92, 75, 0.3);
+        outline: none;
+    }
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #555;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional Utility Classes */
+.text-highlight {
+    color: #e95c4b;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+    .text-highlight:hover {
+        color: #cc503d;
+    }
+
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Custom Styles for Screenshot Look */
+.about-me {
+    display: inline-block;
+    background: #fee8e4;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #e95c4b;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hire-me-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e95c4b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s;
+}
+
+    .scroll-indicator:hover {
+        transform: scale(1.1);
+    }
+
+.skill-bubbles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.skill-bubble {
+    padding: 10px 20px;
+    background-color: #87CEEB; /* Sky blue color */
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
